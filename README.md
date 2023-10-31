@@ -10,7 +10,7 @@ Install [Anaconda](https://www.anaconda.com/products/individual) python distribu
 Clone whaletracks to your local machine using GitHub Desktop (Click on green box on whaletracks GitHub page, then click 'open using Github Desktop') 
 
 If using Mac or Linux:
--   Open bash terminal and navigate to whaletracks directory using "cd whaletracks"
+-   Open bash terminal and navigate to whaletracks directory using "cd multipath_ranging"
 -   Setup python package by running "python setup.py develop"
 -   Download dependencies by running "pip install whaletracks"
 
