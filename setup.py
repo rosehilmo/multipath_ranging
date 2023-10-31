@@ -48,7 +48,6 @@ setup(
         'obspy',
         'notebook',
         'matplotlib',
-        'homebrew',
         'git-lfs',
     ],
     python_requires='>=3.6',
