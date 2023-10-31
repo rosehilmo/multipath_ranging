@@ -27,7 +27,6 @@ It is recommended that you run these codes using a terminal, NOT Spyder. Save an
 
 ## Codes of interest in "whaletracks/whaletracks/detection" folder
 - main_detection.py runs automated spectrogram cross-correlation detections of fin or blue whale calls on specified OBSs and times. Currently set up to run example fin whale detections. Modify parameters in this code to run it on instruments and times of your choosing.
-- BlueCall_manual_picker.py creates spectrograms for user identification and selection of blue whale A and B calls. Currently set up to run example blue whale detections. Modify parameters in this code to run it on instruments and times of your choosing.
 
 - detect_calls.py defines functions used by main_detection.py (casual users of this code will not need to edit these)
 - detect_manual.py defines functions used by BlueCall_manual_picker.py (casual users of this code will not need to edit these)
