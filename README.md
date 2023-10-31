@@ -26,10 +26,10 @@ Now you should be able to open any python code in the whaletracks directory usin
 It is recommended that you run these codes using a terminal, NOT Spyder. Save any code edits you made from Spyder, then open either a CMD.exe (Windows) or bash (Mac, Linux) terminal. In the terminal, enter 'ipython'. This will open an instance of python in your terminal. From there, run any python codes by entering 'run code_name.py'
 
 ## Codes of interest in "whaletracks/whaletracks/detection" folder
-- main_detection.py runs automated spectrogram cross-correlation detections of fin or blue whale calls on specified OBSs and times. Currently set up to run example fin whale detections. Modify parameters in this code to run it on instruments and times of your choosing.
+-'MP' codes are multitpath ranging codes tuned to detect timings of multipaths at specific OBS sites indicated in code. 
+-'plot_ranges_calltimings.py' caluclates ranges using multipath timings and bellhop-derived range vs. timing models. Bellhop models for each site are in bellhop folder.
+- detect_calls.py defines functions used by multipath codes (casual users of this code will not need to edit these)
 
-- detect_calls.py defines functions used by main_detection.py (casual users of this code will not need to edit these)
-- detect_manual.py defines functions used by BlueCall_manual_picker.py (casual users of this code will not need to edit these)
 
 ## Resources
 - [IRIS metadata aggragator](http://ds.iris.edu/mda/7D/FC03D/?starttime=2014-09-07T00:00:00&endtime=2015-10-02T23:59:59) use this to find information on stations you wish to run the detectors on. 
