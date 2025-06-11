@@ -12,14 +12,14 @@ Clone whaletracks to your local machine using GitHub Desktop (Click on green box
 If using Mac or Linux:
 -   Open bash terminal and navigate to whaletracks directory using "cd multipath_ranging"
 -   Setup python package by running "python setup.py develop"
--   Download dependencies by running "pip install whaletracks"
+-   Download dependencies by running "pip install mp_ranging"
 
 If using Windows:
 -   Open Anaconda Navigator
 -   Launch "CMD.exe Prompt"
 -   In CMD.exe terminal, use "cd" command to navigate to whaletracks folder
 -   Setup python package by running "python setup.py develop"
--   Download dependencies by running "pip install whaletracks"
+-   Download dependencies by running "pip install mp_ranging"
 
 Now you should be able to open any python code in the whaletracks directory using the Spyder IDE from the Anaconda Navigator. Use Spyder to edit any code parameters. 
 
