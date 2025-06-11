@@ -1,6 +1,6 @@
 #! /bin/bash
-# Sets up the conda environment whaletracks
-NAME="whaletracks"
+# Sets up the conda environment mp_ranging
+NAME="mp_ranging"
 # Install LFS
 # https://github.com/git-lfs/git-lfs/wiki/Installation
 brew install curl
