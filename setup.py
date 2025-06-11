@@ -23,14 +23,14 @@ def get_version(rel_path):
         raise RuntimeError("Unable to find version string.")
 
 setup(
-    name='whaletracks',    # This is the name of your PyPI-package.
-    packages=['whaletracks'],
-    version=get_version("whaletracks/_version.py"),   # Update the version number for new releases
+    name='mp_ranging',    # This is the name of your PyPI-package.
+    packages=['mp_ranging'],
+    version=get_version("mp_ranging/_version.py"),   # Update the version number for new releases
     #scripts=['teutilities'],    # The name of your scipt, and also the command you'll be using for calling it
     author='R Hilmo, J Hellerstein',
     author_email='wader@uw.edu',
     #url='http://tellurium.analogmachine.org',
-    description='Methods for detecting blue and fin whale calls',
+    description='Methods for ranging to and fin, sei, and Brydes whale calls',
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='MIT',
