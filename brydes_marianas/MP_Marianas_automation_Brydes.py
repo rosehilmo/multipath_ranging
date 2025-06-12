@@ -200,7 +200,7 @@ def main(STARTTIME, ENDTIME,
 
             # Run detection using built kernel and spectrogram
             [times, values] = detect.xcorr(
-                t, f_sub, Sxx_sub, tvec, fvec, BlueKernel, plotflag=PLOTFLAG, ylim=freqlim)
+                t, f_sub, Sxx_sub, tvec, fvec, BlueKernel, plotflag=True, ylim=freqlim)
 
             # Pick detections using EventAnalyzer class
             analyzer_j = EventAnalyzer(times, values, utcstart_chunk - .5*CHUNK_LENGTH, dur=event_dur,

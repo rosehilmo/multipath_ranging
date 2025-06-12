@@ -55,7 +55,7 @@ if BELLHOP == False:
 
 if BELLHOP == True:
     #df_bellhop=pd.read_csv('Marianas_bellhop_arrivals_40km.csv')
-    df_bellhop=pd.read_csv('Marianas_bellhop_arrivals_40km.csv')
+    df_bellhop=pd.read_csv('bellhop/Marianas_ray_B19.csv')
     distance=df_bellhop['interp_r']
     t0=df_bellhop['interp_d']
     t1=df_bellhop['interp_mp1']
@@ -312,6 +312,6 @@ date_form = DateFormatter("%m/%d %H%M")
 ax.xaxis.set_major_formatter(date_form)
 plt.show()
 
-
+import pdb; pdb.set_trace()
 saveranges.to_csv('Marianas_auto_B19_v2.csv', index=False)
 
