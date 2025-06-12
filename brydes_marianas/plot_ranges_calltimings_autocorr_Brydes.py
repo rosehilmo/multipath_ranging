@@ -18,7 +18,7 @@ from matplotlib.dates import DateFormatter
 
 VER_FLAG=False
 BELLHOP=True
-REFLECTIVITY=False
+REFLECTIVITY=True
 
 if BELLHOP == False:
 
@@ -32,7 +32,7 @@ if BELLHOP == False:
 
     #depth=5154; ss=1515; sed_speed=2000; t=1600; #average depth and sound speed m/s ENAM X06
 
-    depth=5271; ss=1512; sed_speed=1550; t=419; #average depth and sound speed m/s ENAM X08
+    depth=5949; ss=1512; sed_speed=1530; t=200; #average depth and sound speed m/s ENAM X08
 
     #depth=5949; ss=1512; sed_speed=1500; t=250 #t=36; #Marainas
 
@@ -65,7 +65,10 @@ if BELLHOP == True:
     mp_2_timing=np.subtract(t2,t1)
     mp_3_timing=np.subtract(t3,t2)
     if REFLECTIVITY == True:
-        mp_1_sub=df_bellhop['interp_sub']
+        #mp_1_sub=df_bellhop['interp_sub']
+        depth=5949; ss=1512; sed_speed=1530; t=200; #Marianas structure
+        [distances,t0s,t1s,t2s,t3s,t0_1s,t1_1s,t1_2s]=ranging.basic_ranging(depth,ss,sed_speed,t,plotflag=False)
+        mp_1_sub=np.subtract(t1_1s,t0s)
         
 
 #mp_1_timing[0:1000]=mp_1_1_timing[0:1000]
@@ -235,7 +238,7 @@ for row in range(len(df1)):
             near_timings_sub=[abs(mp-mp_timing) for mp in mp_1_sub]
             best_match_sub=min(near_timings_sub)
             match_ind_sub=near_timings_sub.index(best_match_sub)
-            best_distance_sub=distance[match_ind_sub]
+            best_distance_sub=distances[match_ind_sub]
             plt.scatter(date,best_distance_sub/1000,c='pink',zorder=1) 
             best_distance = best_distance_sub
             #import pdb; pdb.set_trace()
