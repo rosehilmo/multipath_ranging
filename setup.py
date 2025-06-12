@@ -25,7 +25,7 @@ def get_version(rel_path):
 setup(
     name='mp_ranging',    # This is the name of your PyPI-package.
     packages=['mp_ranging'],
-    version=get_version("whaletracks/_version.py"),   # Update the version number for new releases
+    version=get_version("mp_ranging/_version.py"),   # Update the version number for new releases
     #scripts=['teutilities'],    # The name of your scipt, and also the command you'll be using for calling it
     author='R Hilmo, J Hellerstein',
     author_email='wader@uw.edu',
@@ -38,11 +38,12 @@ setup(
        'License :: OSI Approved :: MIT License',
        'Programming Language :: Python :: 3.6',
        'Programming Language :: Python :: 3.7',
+       'Programming Language :: Python :: 3.13',
        'Operating System :: OS Independent',
     ],
     install_requires=[
         'pandas',
-        'numpy~=1.16', 
+        'numpy', 
         'scipy',
         'nose',
         'obspy',
@@ -50,5 +51,5 @@ setup(
         'matplotlib',
         'git-lfs',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.13',
 )

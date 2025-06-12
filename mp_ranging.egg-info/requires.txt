@@ -1,0 +1,8 @@
+pandas
+numpy
+scipy
+nose
+obspy
+notebook
+matplotlib
+git-lfs
